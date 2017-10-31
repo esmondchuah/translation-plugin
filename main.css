@@ -1,6 +1,6 @@
 .bubble {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background:-webkit-gradient(linear, left top, right bottom, from(#80F9B7), to(#9ABDEB));
