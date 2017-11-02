@@ -26,7 +26,7 @@ function translateText(mouseX, mouseY, selection) {
       return response.json();
     })
     .then(function(data) {
-        if (/[a-z]/i.test(data.text[0])) {
+        if (/^[a-z\d\-_\s]+$/i.test(data.text[0])) {
           renderBubble(mouseX, mouseY, "Translation not found.");
         } else {
           renderBubble(mouseX, mouseY, data.text[0]);
